@@ -54,12 +54,10 @@
   }
 }
 
-/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
-/* Animation utilities */
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -85,4 +83,13 @@ html {
 
 .animation-delay-300 {
   animation-delay: 300ms;
+}
+
+@keyframes gradient {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+section {
+  will-change: transform, opacity;
 }
